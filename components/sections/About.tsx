@@ -1,4 +1,5 @@
 import { Section } from "@/components/ui/Section";
+import { Tag } from "@/components/ui/Tag";
 
 const JOURNEY = [
   "IT Education",
@@ -38,12 +39,7 @@ export function About() {
       </div>
       <div className="mt-8 flex flex-wrap gap-2">
         {JOURNEY.map((step) => (
-          <span
-            key={step}
-            className="rounded-full border border-border px-3 py-1 text-xs text-muted"
-          >
-            {step}
-          </span>
+          <Tag key={step}>{step}</Tag>
         ))}
       </div>
     </Section>
