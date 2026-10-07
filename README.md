@@ -3,7 +3,7 @@
 Personal technology portfolio: software, AI, and business automation projects by
 [Kudzaishe Majeza](https://github.com/Majeezy).
 
-**Status:** 🚧 In active development (Stage 0 of the build plan).
+**Status:** 🚧 In active development (Stage 2 of the build plan).
 
 ## About this project
 
@@ -32,8 +32,8 @@ Open [http://localhost:3000](http://localhost:3000).
 Progress is tracked stage by stage as the site is built out:
 
 - [x] Stage 0 — Repo scaffolded, GitHub + Vercel pipeline connected
-- [ ] Stage 1 — Base layout (Navbar/Footer) + design tokens
-- [ ] Stage 2 — Hero + About sections
+- [x] Stage 1 — Base layout (Navbar/Footer) + design tokens
+- [x] Stage 2 — Hero + About sections
 - [ ] Stage 3 — What I Build + Skills + Approach sections
 - [ ] Stage 4 — Project data model + featured project cards
 - [ ] Stage 5 — Full `/projects` listing + detail pages
