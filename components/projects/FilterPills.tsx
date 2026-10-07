@@ -1,3 +1,5 @@
+import { FOCUS_RING } from "@/lib/styles";
+
 export function FilterPills<T extends string>({
   label,
   value,
@@ -20,7 +22,8 @@ export function FilterPills<T extends string>({
             key={option}
             type="button"
             onClick={() => onChange(option)}
-            className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+            aria-pressed={value === option}
+            className={`rounded-full border px-3 py-1 text-xs transition-colors ${FOCUS_RING} ${
               value === option
                 ? "border-accent bg-accent/10 text-accent"
                 : "border-border text-muted hover:text-foreground"

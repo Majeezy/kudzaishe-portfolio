@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { GithubIcon } from "@/components/icons/GithubIcon";
+import { FOCUS_RING } from "@/lib/styles";
 
 const NAV_LINKS = [
   { href: "/#about", label: "About" },
@@ -19,7 +20,10 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
-        <Link href="/" className="font-semibold tracking-tight">
+        <Link
+          href="/"
+          className={`rounded-sm font-semibold tracking-tight ${FOCUS_RING}`}
+        >
           Kudzaishe Majeza
         </Link>
 
@@ -28,7 +32,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-muted transition-colors hover:text-foreground"
+              className={`rounded-sm text-sm text-muted transition-colors hover:text-foreground ${FOCUS_RING}`}
             >
               {link.label}
             </Link>
@@ -37,7 +41,7 @@ export function Navbar() {
             href="https://github.com/Majeezy"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm transition-colors hover:bg-surface-hover"
+            className={`flex items-center gap-2 rounded-full bg-surface px-4 py-2 text-sm transition-colors hover:bg-surface-hover ${FOCUS_RING}`}
           >
             <GithubIcon size={16} />
             GitHub
@@ -45,22 +49,27 @@ export function Navbar() {
         </nav>
 
         <button
-          className="md:hidden"
+          className={`rounded-sm md:hidden ${FOCUS_RING}`}
           onClick={() => setOpen((value) => !value)}
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-nav"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </Container>
 
       {open && (
-        <nav className="flex flex-col gap-1 border-t border-border px-6 py-4 md:hidden">
+        <nav
+          id="mobile-nav"
+          className="flex flex-col gap-1 border-t border-border px-6 py-4 md:hidden"
+        >
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="py-2 text-sm text-muted hover:text-foreground"
+              className={`rounded-sm py-2 text-sm text-muted hover:text-foreground ${FOCUS_RING}`}
             >
               {link.label}
             </Link>
@@ -69,7 +78,7 @@ export function Navbar() {
             href="https://github.com/Majeezy"
             target="_blank"
             rel="noreferrer"
-            className="py-2 text-sm text-muted hover:text-foreground"
+            className={`rounded-sm py-2 text-sm text-muted hover:text-foreground ${FOCUS_RING}`}
           >
             GitHub ↗
           </a>

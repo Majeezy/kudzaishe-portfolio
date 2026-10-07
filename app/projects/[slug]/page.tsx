@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { Tag } from "@/components/ui/Tag";
 import { StatusBadge } from "@/components/projects/StatusBadge";
 import { GithubIcon } from "@/components/icons/GithubIcon";
+import { FOCUS_RING } from "@/lib/styles";
 
 export async function generateMetadata({
   params,
@@ -54,7 +55,7 @@ async function ProjectDetail({
     <Section className="pt-28 md:pt-32">
       <Link
         href="/projects"
-        className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground"
+        className={`inline-flex items-center gap-2 rounded-sm text-sm text-muted hover:text-foreground ${FOCUS_RING}`}
       >
         <ArrowLeft size={16} />
         All Projects

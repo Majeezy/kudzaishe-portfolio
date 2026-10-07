@@ -3,12 +3,13 @@ import { ArrowUpRight } from "lucide-react";
 import { Project } from "@/types/project";
 import { Tag } from "@/components/ui/Tag";
 import { StatusBadge } from "@/components/projects/StatusBadge";
+import { FOCUS_RING } from "@/lib/styles";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group flex flex-col rounded-xl border border-border bg-surface p-6 transition-colors hover:bg-surface-hover"
+      className={`group flex flex-col rounded-xl border border-border bg-surface p-6 transition-colors hover:bg-surface-hover ${FOCUS_RING}`}
     >
       <div className="flex items-start justify-between gap-4">
         <div>

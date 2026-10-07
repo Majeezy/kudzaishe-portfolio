@@ -9,6 +9,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { Section } from "@/components/ui/Section";
+import { FOCUS_RING } from "@/lib/styles";
 
 type Category = {
   icon: LucideIcon;
@@ -66,7 +67,7 @@ export function WhatIBuild() {
         a shipped project yet — the{" "}
         <Link
           href="/projects"
-          className="underline underline-offset-4 hover:text-foreground"
+          className={`rounded-sm underline underline-offset-4 hover:text-foreground ${FOCUS_RING}`}
         >
           Projects page
         </Link>{" "}

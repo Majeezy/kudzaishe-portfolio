@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import { FOCUS_RING } from "@/lib/styles";
 
 type ButtonProps = {
   href: string;
@@ -16,8 +17,7 @@ export function Button({
   external = false,
   icon,
 }: ButtonProps) {
-  const base =
-    "inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors";
+  const base = `inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors ${FOCUS_RING}`;
   const styles =
     variant === "primary"
       ? "bg-accent text-accent-foreground hover:opacity-90"

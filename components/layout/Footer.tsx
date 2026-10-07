@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { GithubIcon } from "@/components/icons/GithubIcon";
 import { LinkedinIcon } from "@/components/icons/LinkedinIcon";
+import { FOCUS_RING } from "@/lib/styles";
 
 export function Footer() {
   return (
@@ -12,7 +13,7 @@ export function Footer() {
             href="https://github.com/Majeezy"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 hover:text-foreground"
+            className={`flex items-center gap-2 rounded-sm hover:text-foreground ${FOCUS_RING}`}
           >
             <GithubIcon size={16} />
             GitHub
@@ -21,14 +22,14 @@ export function Footer() {
             href="https://www.linkedin.com/in/kudzi-majeza-98460521b/"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-2 hover:text-foreground"
+            className={`flex items-center gap-2 rounded-sm hover:text-foreground ${FOCUS_RING}`}
           >
             <LinkedinIcon size={16} />
             LinkedIn
           </a>
           <a
             href="mailto:kmajeza619@gmail.com"
-            className="hover:text-foreground"
+            className={`rounded-sm hover:text-foreground ${FOCUS_RING}`}
           >
             Email
           </a>
