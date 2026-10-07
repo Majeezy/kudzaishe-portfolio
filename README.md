@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kudzaishe Majeza — Portfolio
 
-## Getting Started
+Personal technology portfolio: software, AI, and business automation projects by
+[Kudzaishe Majeza](https://github.com/Majeezy).
 
-First, run the development server:
+**Status:** 🚧 In active development (Stage 0 of the build plan).
+
+## About this project
+
+This site is the central showcase for my real-world software projects — as
+distinct from a resume. Each project shown here documents the problem it
+solves, the solution, the technologies used, and what I learned building it.
+
+## Tech stack
+
+- [Next.js 16](https://nextjs.org) (App Router)
+- TypeScript
+- Tailwind CSS v4
+- Deployed on [Vercel](https://vercel.com)
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build log
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Progress is tracked stage by stage as the site is built out:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [x] Stage 0 — Repo scaffolded, GitHub + Vercel pipeline connected
+- [ ] Stage 1 — Base layout (Navbar/Footer) + design tokens
+- [ ] Stage 2 — Hero + About sections
+- [ ] Stage 3 — What I Build + Skills + Approach sections
+- [ ] Stage 4 — Project data model + featured project cards
+- [ ] Stage 5 — Full `/projects` listing + detail pages
+- [ ] Stage 6 — Currently Building + GitHub + Experience + Contact + Footer
+- [ ] Stage 7 — Polish: animation, accessibility, SEO, mobile QA
+- [ ] Stage 8 — Real project content populated
+- [ ] Stage 9 — Final deploy + custom domain (optional)
